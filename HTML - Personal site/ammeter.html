@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ammeter</title>
+  </head>
+  <link rel="stylesheet" href="css/style.css">
+  <body>
+<center><h1 class="size">Ammeter</h1></center>
+<p>
+  An <strong class="bold">ammeter</strong>(from ampere meter) is a measuring instrument used to measure the <strong class="bold">current</strong> in a circuit. Electric currents are measured in <strong class="bold">amperes</strong> (A), hence the name. Instruments used to measure smaller currents, in the milliampere or microampere range, are designated as <strong class="bold">milliammeters</strong> or <strong class="bold">microammeters.</strong>
+</p><br /><br />
+<center><img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\ammeter.jpeg" alt="ammeter"><br /><br /></center>
+<p>
+  The majority of ammeters are either connected in <strong class="bold">series</strong> with the circuit carrying the current to be measured (for small fractional amperes), or have their shunt resistors connected similarly in series. In either case, the current passes through the meter or (mostly) through its shunt. Ammeters <strong class="bold">must not be connected directly</strong> across a <strong class="bold">voltage source</strong> since their internal resistance is very low and excess current would flow. Ammeters are designed for a low voltage drop across their terminals, much less than one volt; the extra circuit losses produced by the ammeter are called its "burden" on the measured circuit.<br />
+  <center><h2>Connection of Ammeter in Circuit</h2></center>
+  <p>
+    The <strong class="bold">ammeter is connected in series with the circuit</strong> so that the whole electrons of measurand current passes through the ammeter. The power loss occurs in ammeter because of the <strong class="bold">measurand current</strong> and their <strong class="bold">internal resistance</strong>. The ammeter circuit has low resistance so that the small voltage drop occurs in the circuit.
+  </p>
+<center><img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\ammeter connection-circuit.jpg" alt="connection of ammeter"></center>
+<p>
+  The resistance of the ammeter is kept low because of the two reasons.<br />
+  <li>The whole measurand current passes through the ammeter.</li><br />
+  <li>The low voltage drop occurs across the ammeter.</li><br />
+</p>
+<h2>Types of Ammeter</h2>
+<p>
+  The classification of the ammeter depends on their design and the type of current flows through the ammeter. The following are the types of an ammeter regarding construction.<br /><br />
+  1)Permanent moving coil ammeter.<br />
+  2)Moving iron ammeter.<br />
+  3)Electro-dynamometer ammeter.<br />
+  4)Rectifier type ammeter.<br />
+</p>
+<p>
+  We can classify the ammeters into the following two types based on the type of current that it can measure.<br />
+  <strong>1)DC Ammeters<br />
+  2)AC Ammeter</strong>
+  <hr size="4" />
+</p>
+<center><h2>DC Ammeter</h2></center>
+<p>
+  <center>As the name suggests, DC ammeter measures the DC current that flows through<br /> any two points of an electric circuit. A practical DC ammeter is shown in figure.</center>
+</p>
+<center> <img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\ammeter.jpeg" alt="ammeter"> </center>
+<p>
+  The DC ammeter shown in above figure is a <strong class="bold">(0−50)A DC ammeter</strong>. Hence, it can be used to measure the DC currents from zero Amperes to 50 Amperes.
+  If we place a resistor in <strong class="bold">parallel</strong> with the Permanent Magnet Moving Coil (PMMC) galvanometer, then the entire combination acts as DC ammeter.
+  The parallel resistance, which is used in DC ammeters, is also called <strong class="bold">shunt resistance</strong> or simply, shunt. The value of this resistance should be considered small in order to measure the DC current of large value.
+  The circuit diagram of DC ammeter is shown in below figure.
+</p>
+<img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\circuit_diagram_of_dc_ammeter.jpg" alt="circuit diagram of dc ammeter">
+<p>
+  We have to place this DC ammeter in <strong class="bold">series</strong> with the branch of an electric circuit, where the DC current is to be measured. The voltage across the elements, which are connected in parallel is same. So, the voltage across <strong class="bold">shunt resistor, Rsh</strong> and the voltage across <strong class="bold">galvanometer resistance, Rm</strong> is same, since those two elements are connected in parallel in above circuit. <strong>Mathematically</strong>, it can be written as<br /><br />
+  IshRsh= ImRm<br /><br />
+  ⇒Rsh=ImRmIsh      <strong class="equation">(Equation 1)</strong><br /><br />
+  The <strong class="bold">KCL</strong> equation at node 1 is<br /><br />
+  −I+Ish+Im=0<br /><br />
+⇒Ish=I−Im<br /><br />
+Substitute the value of Ish in <strong class="equation">Equation 1.</strong><br /><br />
+Rsh=ImRmI−Im    <strong class="equation">(Equation 2)</strong><br /><br />
+Take, Im as common in the denominator term, which is present in the right hand side of <strong class="equation">Equation 2</strong><br /><br />
+Rsh=ImRmIm(1Im−1)<br /><br />
+⇒Rsh=RmIIm−1    <strong class="equation">(Equation 3)</strong><br /><br />
+Where,<br />
+<strong>Rsh</strong> is the shunt resistance<br />
+<strong>Rm </strong>is the internal resistance of galvanometer<br />
+<strong>I</strong> is the total Direct Current that is to be measured<br />
+<strong>Im</strong> is the full scale deflection current<br />
+The ratio of total Direct Current that is to be measured, <strong>I</strong> and the full scale deflection current of the galvanometer, <strong>Im</strong> is known as multiplying factor, <strong>m</strong>. Mathematically, it can be represented as<br /><br />
+m=IIm <strong class="equation">(Equation 4)</strong><br /><br />
+Rsh=Rmm−1<strong class="equation">(Equation 5)</strong><br /><br />
+We can find the value of shunt resistance by using either <strong class="equation">Equation 2 or Equation 5</strong> based on the available data.<br /><br />
+</p>
+<center><h2>Multi Range DC Ammeter</h2></center>
+<p>
+  This DC ammeter can be used to measure a <strong class="bold">particular range of Direct Currents</strong>.
+If we want to use the DC ammeter for measuring the Direct Currents of multiple ranges, then we have to use multiple <strong class="bold">parallel resistors</strong> instead of single resistor and this entire combination of resistors is in parallel to the PMMC galvanometer. The circuit diagram of multi range DC ammeter is shown in below figure.
+</p>
+<img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\circuit_diagram_of_multi_range_dc_ammeter.jpg" alt="circuit diagram of multi range dc ammeter"><br />
+<p>
+  Place this multi range DC ammeter in series with the branch of an electric circuit, where the Direct Current of required range is to be measured. The desired range of currents is chosen by connecting the switch, s to the respective shunt resistor.<br /><br />
+  Let, <strong class="bold">m1,m2,m3 and m4</strong> are the multiplying factors of DC ammeter when we consider the total Direct Currents to be measured as, <strong class="bold">I1,I2,I3 and I4</strong> respectively. Following are the formulae corresponding to each multiplying factor<br /><br />
+  m1= I1Im<br /><br />
+m2= I2Im<br /><br />
+m3= I3Im<br /><br />
+m4= I4Im<br /><br />
+In above circuit, there are four shunt resistors, <strong class="bold">Rsh1,Rsh2,Rsh2 and Rsh4</strong>. Following are the formulae corresponding to these four resistors.<br /><br />
+Rsh1= Rm/m1−1<br /><br />
+Rsh2= Rm/m2−1<br /><br />
+Rsh3= Rm/m3−1<br /><br />
+Rsh4= Rm/m4−1<br /><br />
+The above formulae will help us find the resistance values of each shunt resistor.
+</p>
+  <hr size="4" />
+  <center><h2>AC Ammeter</h2></center>
+  <p>
+    Current is the rate of flow of electric charge. If the direction of this electric charge changes regularly, then the resultant current is called <strong class="bold">Alternating Current (AC).</strong>
+    The instrument, which is used to measure the Alternating Current that flows through any branch of electric circuit is called <strong class="bold">AC ammeter.</strong>
+    Example − <strong>Thermocouple type AC ammeter.</strong>
+    Now, let us discuss about Thermocouple type AC ammeter.<br /><br />
+  </p>
+<center><h2>Thermocouple Type AC Ammeter</h2></center>
+<p>
+  If a Thermocouple is <strong class="bold">connected ahead</strong> of PMMC galvanometer, then that entire combination is called thermocouple type AC ammeter. The block diagram of thermocouple type AC ammeter is shown in below figure.
+</p>
+<img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\block diagram thermocouple_type_ac_ammeter.jpg" alt="block diagram thermocouple ac ammeter">
+<p>
+  The above block diagram consists of mainly two blocks: <strong class="bold">a thermocouple, and a PMMC galvanometer</strong>. We will get the corresponding circuit diagram, just by replacing each block with the respective component(s) in above block diagram. So, the circuit diagram of thermocouple type AC ammeter will look like as shown in below figure.
+</p>
+<img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\circuit_diagram_of_thermocouple_type_ac_ammeter.jpg" alt="circuit_diagram_of_thermocouple ac ammeter">
+<p>
+  Thermocouple generates an <strong class="bold">EMF, e,</strong> whenever the Alternating Current, <strong>I</strong> flows through heater element. This EMF, e is <strong class="bold">directly proportional</strong> to the rms value of the current, <strong>I</strong> that is flowing through heater element. So, we have to calibrate the scale of PMMC instrument to read rms values of current.
+</p>
+<hr size="4" />
+<center><h2>Effect of Temperature in Ammeter</h2></center>
+<p>
+  The ammeter is a <strong class="bold">sensitive device</strong> which is easily affected by the surrounding temperature. The variation in temperature causes the error in the reading. This can reduce by <strong class="bold">swamping resistance</strong>. The resistance having <strong>zero temperature coefficient is known as the swamping resistance. It connects in series with the ammeter. The swamping resistance reduces the effect of temperature on the meter.</strong>
+</p>
+<center><img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\swamping-resistance.jpg" alt="swamping resistance"></center>
+<p>
+  The ammeter has the inbuilt fuse which protects the ammeter from the heavy current. If <strong class="bold">substantial current</strong> flows through the ammeter, the fuse will break. The ammeter is not able to measure the current until the new one does not replace the fuse.
+</p>
+<hr size="4" />
+<span style="float:right;">
+<a class="text" href="voltmeter.html">NEXT</a>
+<svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+  </span>
+  <span style="float:left;">
+    <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+    <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+  </svg>
+  <a class="text" href="clamp.html">PREVIOUS</a>
+  </span>
+</body><br><br><br><br><br>
+  <footer class="foot"><strong>Kashifa Sayyed</strong></footer>
+  <span style="float:right;">
+    <a href="index.html"</a>
+    <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+  </svg>
+  </span>
+</html>

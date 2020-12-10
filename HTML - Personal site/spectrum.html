@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Spectrum Analyzer</title>
+  <link rel="stylesheet"href="css/style.css" />
+  </head>
+  <center><h1 class="size">Spectrum Analyzer</h1></center>
+  <body>
+    <p>
+    A spectrum analyzer measures the <strong class="bold">magnitude of an input signal versus frequency</strong> within the full frequency range of the instrument. The primary use is to measure the power of the spectrum of <strong class="bold">known and unknown signals</strong>. The input signal that most common spectrum analyzers measure is electrical; however, spectral compositions of other signals, such as <strong class="bold">acoustic pressure waves and optical light waves</strong>, can be considered through the use of an appropriate transducer. Spectrum analyzers for other types of signals also exist, such as optical spectrum analyzers which use direct optical techniques such as a monochromator to make measurements.
+By analyzing the spectra of electrical signals, dominant frequency, power, distortion, harmonics, bandwidth, and other spectral components of a signal can be observed that are not easily detectable in time domain waveforms. These parameters are useful in the characterization of electronic devices, such as wireless transmitters.
+The display of a spectrum analyzer has <strong class="bold">frequency on the horizontal axis and the amplitude displayed on the vertical axis</strong>. To the casual observer, a spectrum analyzer looks like an oscilloscope and, in fact, some lab instruments can function either as an oscilloscope or a spectrum analyzer.<br /><br />
+</p>
+<center><img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\spectrum analysis.jpg" alt="spectrum Analysis"></center><br /><br /><br />
+<hr size=4 />
+<center><h2>Types of Spectrum Analyzers</h2></center>
+<p>
+  We can classify the spectrum analyzers into the following <strong class="bold">two types.</strong>
+  <br /><li>Filter Bank Spectrum Analyzer</li><br />
+  <br /><li>Superheterodyne Spectrum Analyzer</li><br />
+</p><br /><br />
+<center><h2>Filter Bank Spectrum Analyzer</h2></center>
+<p>
+  The spectrum analyzer, used for analyzing the signals are of <strong class="bold">AF range</strong> is called filter bank spectrum analyzer, or <strong class="bold">real time spectrum analyzer</strong> because it shows (displays) any variations in all input frequencies.
+  The following figure shows the <strong> block diagram</strong> of filter bank spectrum analyzer.
+</p><br /><br />
+<center><img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\block diagram of spectrum analysis.jpg" alt="block diagram of filter bank"> </center><br /><br />
+<p>
+  The <strong>working</strong> of filter bank spectrum analyzer is mentioned below.
+  <br /><li>It has a set of band pass filters and each one is designed for allowing a specific band of frequencies. The output of each band pass filter is given to a corresponding detector.</li><br />
+  <br /><li>All the detector outputs are connected to Electronic switch. This switch allows the detector outputs sequentially to the vertical deflection plate of CRO. So, CRO displays the frequency spectrum of AF signal on its CRT screen.</li><br />
+</p>
+<center><h2>Superheterodyne Spectrum Analyzer</h2></center>
+<p>
+  The spectrum analyzer, used for analyzing the signals are of <strong class="bold">RF range</strong> is called superheterodyne spectrum analyzer. Its <strong>block diagram</strong> is shown in below figure<br /><br />
+</p>
+<center><img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\superheterodyne block diagram.jpg" alt="superheterodyne block diagram"></center><br /><br />
+<p>
+  The <strong>working</strong> of superheterodyne spectrum analyzer is mentioned below.
+   <br /><li>The RF signal, which is to be analyzed is applied to input attenuator. If the signal amplitude is too large, then it can be attenuated by an <strong>input attenuator</strong>.</li><br />
+   <br /><li><strong>Low Pass Filter</strong> (LPF) allows only the frequency components that are less than the cut-off frequency.</li><br />
+   <br /><li><strong>Mixer</strong> gets the inputs from Low pass filter and voltage tuned oscillator. It produces an output, which is the difference of frequencies of the two signals that are applied to it. </li><br />
+   <br /><li><strong>IF amplifier</strong> amplifies the Intermediate Frequency (IF) signal, i.e. the output of mixer. The amplified IF signal is applied to detector. </li><br />
+ </p>
+ <p>
+   The output of detector is given to vertical deflection plate of CRO. So, CRO displays the frequency spectrum of <strong class="bold">RF signal</strong> on its CRT screen.
+   So, we can choose a particular spectrum analyzer based on the frequency range of the signal that is to be analyzed.
+</p>
+<hr size=4 />
+<center><h2>Form factor</h2></center>
+<p>
+  Spectrum analyzers tend to fall into four form factors: benchtop, portable, handheld and networked.
+</p>
+<table class="border" border="50">
+  <tr>
+    <td>
+      <h2 class="factor">Benchtop</h2>
+      <p>
+        This form factor is useful for applications where the spectrum analyzer can be plugged into <strong class="bold">AC power</strong>, which generally means in a lab environment or production/manufacturing area. Bench top spectrum analyzers have historically offered better <strong class="bold">performance and specifications</strong> than the portable or handheld form factor. Bench top spectrum analyzers normally have multiple fans (with associated vents) to dissipate heat produced by the processor. Due to their architecture, bench top spectrum analyzers typically weigh more than <strong class="bold">30 pounds (14 kg)</strong>. Some bench top spectrum analyzers offer optional battery packs, allowing them to be used away from AC power. This type of analyzer is often referred to as a "portable" spectrum analyzer.
+      </p>
+    </td>
+  </tr>
+</table><br /><br /><br />
+<table class="border" border="50">
+  <tr>
+    <td>
+      <h2 class="factor">Portable</h2>
+      <p>
+        This form factor is useful for any applications where the spectrum analyzer needs to be taken outside to make measurements or simply carried while in use. Attributes that contribute to a useful portable spectrum analyzer include:
+        <br /><li>Optional battery-powered operation to allow the user to move freely outside.</li><br />
+        <br /><li>Clearly viewable display to allow the screen to be read in bright sunlight, darkness or dusty conditions.</li><br />
+        <br /><li>Light weight (usually less than 15 pounds (6.8 kg).</li><br />
+      </p>
+    </td>
+  </tr>
+</table><br /><br /><br />
+<table class="border" border="50">
+  <tr>
+    <td>
+      <h2 class="factor">Handheld</h2>
+      <p>
+        This form factor is useful for any application where the spectrum analyzer needs to be very light and small. Handheld analyzers usually offer a <strong class="bold">limited capability relative to larger systems</strong>. Attributes that contribute to a useful handheld spectrum analyzer include
+        <br /><li>Very low power consumption.</li><br />
+        <br /><li>Battery-powered operation while in the field to allow the user to move freely outside.</li><br />
+        <br /><li>Very small size.</li><br />
+        <br /><li>Light weight (usually less than 2 pounds (0.9 kg).</li><br />
+      </p>
+    </td>
+  </tr>
+</table><br /><br /><br />
+<table class="border" border="50">
+  <tr>
+    <td>
+      <h2 class="factor">Networked</h2>
+      <p>
+        This form factor does not include a display and these devices are designed to enable a new class of geographically-distributed spectrum monitoring and analysis applications. The key attribute is the ability to connect the analyzer to a network and monitor such devices across a network. While many spectrum analyzers have an Ethernet port for control, they typically lack efficient data transfer mechanisms and are too bulky or expensive to be deployed in such a distributed manner. Key applications for such devices include RF intrusion detection systems for secure facilities where wireless signaling is prohibited. As well cellular operators are using such analyzers to remotely monitor interference in licensed spectral bands. The distributed nature of such devices enable geo-location of transmitters, spectrum monitoring for dynamic spectrum access and many other such applications.
+      Key attributes of such devices include:
+      <br /><li>Network-efficient data transfer</li><br />
+      <br /><li>Low power consumption</li><br />
+      <br /><li>The ability to synchronize data captures across a network of analyzers</li><br />
+      <br /><li>Low cost to enable mass deployment.</li><br />
+    </p>
+    </td>
+  </tr>
+</table><br /><br /><br />
+<hr size=4 />
+<span style="float:right;">
+<a class="text" href="oscilloscope.html">NEXT</a>
+<svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+  </span>
+  <span style="float:left;">
+    <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+    <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+  </svg>
+  <a class="text" href="shaft.html">PREVIOUS</a>
+  </span>
+</body><br><br><br><br><br>
+  <footer class="foot"><strong>Kashifa Sayyed</strong></footer>
+  <span style="float:right;">
+    <a href="index.html"</a>
+    <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+  </svg>
+  </span>
+</html>

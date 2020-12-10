@@ -1,0 +1,74 @@
+/************************Tag selectror*********************/
+body{
+  background-color:#e6e6fa;
+  padding: 5%
+}
+
+h1{
+  color:#800080;
+  font-style: italic;
+}
+td{
+  font-size: 24px;
+}
+p{
+  font-size: 24px;
+}
+ol{
+  font-size: 24px;
+}
+li{
+  font-size: 20px;
+}
+center{
+  color: black;
+  font-size: 25px;
+}
+li{
+  font-size: 24px;
+}
+hr{
+  border-style: dotted  none none none;
+}
+h2{
+  font-style: italic;
+  color: 	#191970
+}
+
+/************************class selectror*********************/
+.bold{
+  color:red;
+}
+.equation{
+  color: #0000cd;
+}
+
+.tree{
+  color: green
+}
+.heading{
+  color: red;
+  font-size:80px;
+
+}
+.size{
+  font-size: 50px;
+}
+.colour{
+  background-color:#e6e6fa
+}
+.text{
+  color:	#191970;
+  font-size: 35px;
+}
+.bi{
+  color:#ffb6c1
+}
+.factor{
+  font-size: 30px;
+}
+.foot{
+  font-style: italic;
+  color:#191970;
+  font-size: 20px;
+}

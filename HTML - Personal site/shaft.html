@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shaft Encoder</title>
+      <link rel="stylesheet"href="css/style.css" />
+  </head>
+    <center><h1 class="size">Shaft Encoder</h1></center>
+  <body>
+<p>
+  A <strong class="bold">rotary encoder</strong>, also called a <strong class="bold"></strong>, is an electro-mechanical device that converts the <strong class="bold">angular position</strong> or motion of a shaft or axle to <strong class="bold">analog or digital output</strong> signals.
+  There are two main types of rotary encoder: <strong class="bold">absolute and incremental</strong>. The output of an absolute encoder indicates the current shaft position, making it an angle transducer. The output of an incremental encoder provides information about the motion of the shaft, which typically is processed elsewhere into information such as position, speed and distance.
+</p>
+<center><img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\rotary_encoder_13-track_opened.jpg" alt="rotary encoder opened tracks"></center>
+<br /><br /><h2>Features</h2>
+<p>
+  1. The output is controlled according to the <strong class="bold">rotational displacement of the shaft.</strong><br />
+  2. Returning to the origin is not required at startup for Absolute Encoders.<br />
+  3. The rotation direction can also be detected.<br />
+4. Choose the optimal Sensor from a wide lineup of resolutions and output types.<br />
+</p>
+<hr size=4 />
+<center><h2>Absolute Encoder</h2></center>
+<p>
+  An <strong>absolute encoder</strong> maintains position information when power is removed from the encoder.he position of the encoder is available immediately on applying power. The relationship between the encoder value and the physical position of the controlled machinery is set at assembly; the system does not need to return to a calibration point to maintain position accuracy.
+  An absolute encoder has multiple code rings with various binary weightings which provide a data word representing the absolute position of the encoder within <strong class="bold"> one revolution</strong>. This type of encoder is often referred to as a <strong class="bold">parallel absolute encoder</strong>
+  A multi-turn absolute rotary encoder includes additional code <strong class="bold">wheels and gears</strong>. A <strong class="bold">high-resolution</strong> wheel measures the <strong class="bold">fractional rotation</strong>, and <strong class="bold">lower-resolution</strong> geared code wheels record the <strong class="bold">number of whole revolutions</strong> of the shaft
+</p><br /><br />
+<img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\absolute encoder diagram.jpeg" alt="absolute encoder diagram">
+<br /><br /><p>
+  When a disk with a pattern
+rotates, light passing through
+the slits is <strong class="bold">transmitted or
+blocked</strong> according to the
+pattern. The received light is
+converted to electrical
+currents in the detector
+elements, takes the form of
+waves, and becomes digital
+signals.
+Data is never corrupted by noise, and returning to the zero position at startup is not necessary.
+Furthermore, even when code reading becomes impossible due to <strong class="bold">high-speed rotation</strong>, correct data can be read when the <strong class="bold">rotation speed slows</strong>, and correct rotation data can even be read when the power is restored after a power failure or other interruption in the power supply.
+</p>
+<hr size=4 />
+<center><h2>Incremental Encoder</h2></center>
+<p>
+  The rotary <strong>incremental encoder</strong> is the most widely used of all rotary encoders due to its ability to provide real-time position information. The measurement resolution of an incremental encoder is not limited in any way by its two internal, incremental movement sensors; one can find in the market incremental encoders with up to <strong class="bold"> 10,000 counts per revolution</strong>, or more.
+</p><br /><br />
+<p>
+  Rotary incremental encoders report position changes without being prompted to do so, and they convey this information at data rates which are orders of magnitude faster than those of most types of absolute shaft encoders. Because of this, incremental encoders are commonly used in applications that require precise measurement of position and velocity.
+</p>
+<hr size=4 />
+<center><h2>Ways of encoding shaft position</h2></center>
+<h2><li>Standard binary encoding</li></h2>
+<p>
+  An example of a binary code, in an extremely simplified encoder with only three contacts, is shown below.
+</p><br /><br />
+<img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\standard binary coding table.jpeg" alt="standard binary coding table"><br /><br />
+<p>
+  In general, where there are <strong class="bold">n contacts</strong>, the number of distinct positions of the shaft is <strong class="bold">2n</strong>. In this example, n is 3, so there are <strong class="bold">2³ or 8 positions</strong>.
+  The contacts produce a standard binary count as the disc rotates. However, this has the drawback that if the disc stops between two adjacent sectors, or the contacts are not perfectly aligned, it can be impossible to determine the angle of the shaft. To illustrate this problem, consider what happens when the shaft angle changes from 179.9° to 180.1° (from sector 3 to sector 4). At some instant, according to the above table, the contact pattern changes from <strong class="bold">off-on-on</strong> to <strong class="bold">on-off-off</strong>. However, this is not what happens in reality. In a practical device, the contacts are never perfectly aligned, so each switches at a different moment. If contact 1 switches first, followed by contact 3 and then contact 2, for example, the actual sequence of codes is:
+<strong><li>off-on-on (starting position)</li><br />
+<li>on-on-on (first, contact 1 switches on)</li><br />
+<li>on-on-off (next, contact 3 switches off)</li><br />
+<li>on-off-off (finally, contact 2 switches off)</li><br /></strong><br />
+</p>
+<p>
+Now look at the sectors corresponding to these codes in the table. In order, they are 3, 7, 6 and then 4. So, from the sequence of codes produced, the shaft appears to have jumped from <strong class="bold">sector 3 to sector 7</strong>, then gone backwards to sector 6, then backwards again to sector 4, which is where we expected to find it. In many situations, this behaviour is undesirable and could cause the system to fail. For example, if the encoder were used in a robot arm, the controller would think that the arm was in the wrong position, and try to correct the error by turning it through 180°, perhaps causing damage to the arm.
+</p>
+<h2><li>Gray Encoding</li></h2>
+<p>
+  To avoid the above problem, <strong class="bold">Gray coding</strong> is used. This is a system of binary counting in which any <strong>two</strong> adjacent codes differ by only one bit position. For the three-contact example given above, the Gray-coded version would be as follows.<br /><br />
+</p>
+<img src="C:\Users\kasha.LAPTOP-72GSVFI6\Desktop\web development\HTML - Personal site\grey encoding table.jpeg" alt="grey encoding table"><br /><br />
+<p>
+  In this example, the transition from sector 3 to sector 4, like all other transitions, involves only one of the contacts changing its state from on to off or vice versa. This means that the sequence of incorrect codes shown in the previous illustration cannot happen.
+</p>
+<hr size=4 />
+<span style="float:right;">
+<a class="text" href="spectrum.html">NEXT</a>
+<svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-chevron-double-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg>
+  </span>
+  <span style="float:left;">
+    <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-chevron-double-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+    <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+  </svg>
+  <a class="text" href="voltmeter.html">PREVIOUS</a>
+  </span>
+</body><br><br><br><br><br>
+  <footer class="foot"><strong>Kashifa Sayyed</strong></footer>
+  <span style="float:right;">
+    <a href="index.html"</a>
+    <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-house-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M8 3.293l6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+  </svg>
+  </span>
+</html>
